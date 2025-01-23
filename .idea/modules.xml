@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Even and Odd checker/Even and Odd checker.iml" filepath="$PROJECT_DIR$/Even and Odd checker/Even and Odd checker.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaFC.iml" filepath="$PROJECT_DIR$/javaFC.iml" />
     </modules>
   </component>
