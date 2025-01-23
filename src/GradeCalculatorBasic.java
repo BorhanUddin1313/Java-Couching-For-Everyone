@@ -3,11 +3,12 @@ import java.util.Scanner;
 
 public class GradeCalculatorBasic {
     public static void main(String[] args){
+        /// Genarates a random number in 0-100
         Random ran = new Random();
         double Score= ran.nextDouble(100);
         System.out.println(Score);
 
-        /// if statements
+        /// Checks the score to give out grades
         if (Score>=90){
             System.out.println("Grade: A");
         }
