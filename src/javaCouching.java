@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class javaCouching {
@@ -94,6 +95,7 @@ public class javaCouching {
          */
 
         /// shopping cart
+        /*
 
         String item;
         double price;
@@ -121,6 +123,15 @@ public class javaCouching {
         total = quantity * price;
 
         System.out.println("your total is : " + total + currency);
+
+         */
+        /// random
+        Random random = new Random();
+        int num;
+        for(int i=0; i<3;i++){
+            num=random.nextInt(100);
+            System.out.println(num);
+        }
 
 
     }
