@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -126,12 +127,67 @@ public class javaCouching {
 
          */
         /// random
+/*
         Random random = new Random();
-        int num;
-        for(int i=0; i<3;i++){
-            num=random.nextInt(100);
-            System.out.println(num);
+        double num;
+       for(int i=0; i<5; i++){
+           num= random.nextDouble(100);
+           System.out.println("the random numbers are : " + num);
+       }
+
+ */
+        /*
+        Random random = new Random();
+        Double num;
+        num=random.nextDouble(0,1);
+        if(num>=0.75){
+            System.out.println("Sowrd");
+        } else if (num<=0.25) {
+            System.out.println("sheild");
         }
+
+         */
+
+       /// Math classes......
+       ////*
+        double c;
+        double a;
+        double b;
+        /*
+        num=Math.pow();
+        num=Math.abs();
+        num=Math.sqrt();
+        num=Math.round();
+        num=Math.floor();
+        num=Math.max();
+        num=Math.min();
+
+         */
+
+        /// c^2= a^2+b^2
+        System.out.print("Enter the cordinantes for a: ");
+        a=sc.nextDouble();
+        System.out.println(a);
+
+        System.out.print("Enter the cordinatens for b: ");
+        b=sc.nextDouble();
+        System.out.println(b);
+
+        c= Math.sqrt(Math.pow(a, 2)+ Math.pow(b,2));
+        System.out.println("C is = " + c);
+
+
+
+
+
+
+
+
+        sc.close();
+
+
+
+
 
 
     }
