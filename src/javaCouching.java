@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import static java.lang.Math.pow;
+
 public class javaCouching {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -176,7 +178,134 @@ public class javaCouching {
         c= Math.sqrt(Math.pow(a, 2)+ Math.pow(b,2));
         System.out.println("C is = " + c);
 
+ */     /*
+        int age = 10;
+
+         double height= 2000.9000;
+         double h=-20.9;
+
+        System.out.printf("Borhan age is %d\n", age);
+        System.out.printf("%.2f\n",height);
+        System.out.printf("%+,.2f\n",height);
+        System.out.printf("%,.2f\n",height);
+        System.out.printf("%( .2f\n",h);
+        System.out.printf("% .3f\n % .3f",height,h);
+        */
+/*
+        int a1=1;
+        int a2=22;
+        int a3=333;
+        int a4=4444;
+
+        System.out.printf("%05d\n",a1);
+        System.out.printf("%05d\n",a2);
+        System.out.printf("%05d\n",a3);
+        System.out.printf("%05d\n\n",a4);
+
+        System.out.printf("%4d%-4d\n",a1,a1);
+        System.out.printf("%4d%-4d\n",a2,a2);
+        System.out.printf("%4d%-4d\n",a3,a3);
+        System.out.printf("%4d%-4d\n",a4,a4);
+
  */
+        /*
+        ///Project Compund intrest calculator
+
+        double p;
+        double r;
+        double years;
+        double A;
+        int n;
+
+        System.out.print("Enter the principal ammount: ");
+        p=sc.nextDouble();
+        ///System.out.println(principal);
+
+        System.out.print("Enter the rate: ");
+        r=sc.nextDouble()/100;
+        ///System.out.println(rate);
+
+        System.out.print("Enter year: ");
+        years=sc.nextDouble();
+        ///System.out.println(years);
+
+        System.out.print("Enter how many times compunded:  ");
+        n=sc.nextInt();
+
+        A=p*pow((1+r/n),n*years);
+
+        System.out.printf("Ammount is %f ",A);
+
+         */
+
+        /*
+        System.out.println("are you a student?");
+        boolean isStudent =sc.nextBoolean();
+        System.out.println("are you a senior?");
+        boolean isSenior=sc.nextBoolean();
+        double price= 9.99;
+
+        if(isStudent) {
+            if (isSenior) {
+                System.out.printf("you get double discount of 50%!! %f",price);
+                price *= 0.5;
+            } else {
+                System.out.println("you get a student discount of 10%");
+                price *= 0.9;
+                System.out.printf("ticket price %f",price);
+            }
+        }
+        else {
+            if (isSenior) {
+                System.out.println("You get senior discount 30%!!!");
+                price *= 0.7;
+                System.out.printf("ticket price %f\n", price);
+            } else {
+                System.out.printf("You pay full price %f\n ", price);
+            }
+        }
+
+         */
+
+        /// STRING METHODS
+        ///.equals();
+        ///.indexOf();
+        ///.atUppercase();
+        ///.atLowercase();
+        ///.contains();
+        ///.isEqual();
+        ///.Trim
+        ///.length();
+        ///.charAt();
+        /// .lastIndexOf();
+        /// .replace();
+
+
+        String email;
+        String username;
+        String domain;
+
+        /// take the user input
+
+        while(true){
+            System.out.print("Enter your email: ");
+            email= sc.nextLine();
+
+            if (email.contains(" ")){
+                System.out.println("Enter a valid Email without any spaces");
+            }else {
+                if(email.contains("@")){
+                    System.out.println("valid email");
+                    break;
+                }else {
+                    System.out.println("Enter a Email with @");
+
+                }
+
+
+            }
+
+        }
 
 
 
@@ -186,7 +315,16 @@ public class javaCouching {
 
 
 
-        sc.close();
+
+
+
+
+
+
+
+
+
+
 
     }
 }
