@@ -280,7 +280,9 @@ public class javaCouching {
         /// .lastIndexOf();
         /// .replace();
 
-/*
+
+
+//Simple Email Authenticator
         String email;
         String username;
         String domain;
@@ -307,7 +309,7 @@ public class javaCouching {
 
         }
 
- */
+
 
  //CALCULATOR APP
 
