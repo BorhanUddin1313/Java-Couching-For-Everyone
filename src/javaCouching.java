@@ -280,7 +280,7 @@ public class javaCouching {
         /// .lastIndexOf();
         /// .replace();
 
-
+/*
         String email;
         String username;
         String domain;
@@ -307,18 +307,53 @@ public class javaCouching {
 
         }
 
+ */
 
+ //CALCULATOR APP
 
+        //Define the needed variables
+        double num1;
+        double num2;
+        char operator;
+        double result=0;
+        boolean validOperator=true;
 
+        //Ask for user in put
+        System.out.print("Enter the First number: ");
+        num1= sc.nextDouble();
+        //testing the num1 entry(optional)
+        //System.out.println(num1);
+        System.out.print("Enter the second number: ");
+        num2=sc.nextDouble();
 
+        //ask for the operation
+        System.out.print("Enter the Operator (+, -, *, /, ^): ");
+        operator=sc.next().charAt(0);
 
-
-
-
-
-
-
-
+        //Use the advance switch case to use the operators
+        switch (operator){
+            case '+' -> result=num1+num2;
+            case '-' -> result=num1-num2;
+            case '*' -> result=num1*num2;
+            case '/' ->{
+                //we can not divide by 0
+                if (num2==0){
+                    System.out.println("Error!");
+                    validOperator=false;
+                }else {
+                    result= num1/num2;
+                }
+            }
+            case '^' -> result= Math.pow(num1,num2);
+            default -> {
+                    System.out.println("Invalid Operator");
+                    validOperator = false;
+            }
+        }
+        //the if statement is placed to check if the valid operation is correct, if it is only then we can show the result
+        if (validOperator){
+            System.out.println(result);
+        }
 
 
 
@@ -328,4 +363,5 @@ public class javaCouching {
 
     }
 }
+
 
