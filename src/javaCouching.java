@@ -66,10 +66,10 @@ public class javaCouching {
 
 
          */
-        /// MADLIBS game
+/// MADLIBS game
 
 
-        /// Augmented assignment operators
+/// Augmented assignment operators
         /*
         int x =10
         int y =3
@@ -93,11 +93,9 @@ public class javaCouching {
         double pemdas= 23+23-452.84/20-(50-6)/25.99;
         System.out.println(pemdas);
 
-         */
 
-        /*
 
-        /// shopping cart
+/// shopping cart
 
         String item;
         double price;
@@ -150,7 +148,7 @@ public class javaCouching {
 
          */
 
-        ///
+///
         /*
         double c;
         double a;
@@ -164,8 +162,8 @@ public class javaCouching {
         num=Math.max();
         num=Math.min();
 
-         */
-/*
+
+
         /// c^2= a^2+b^2
         System.out.print("Enter the cordinantes for a: ");
         a=sc.nextDouble();
@@ -178,7 +176,7 @@ public class javaCouching {
         c= Math.sqrt(Math.pow(a, 2)+ Math.pow(b,2));
         System.out.println("C is = " + c);
 
- */     /*
+
         int age = 10;
 
          double height= 2000.9000;
@@ -190,8 +188,8 @@ public class javaCouching {
         System.out.printf("%,.2f\n",height);
         System.out.printf("%( .2f\n",h);
         System.out.printf("% .3f\n % .3f",height,h);
-        */
-/*
+
+
         int a1=1;
         int a2=22;
         int a3=333;
@@ -207,9 +205,9 @@ public class javaCouching {
         System.out.printf("%4d%-4d\n",a3,a3);
         System.out.printf("%4d%-4d\n",a4,a4);
 
- */
-        /*
-        ///Project Compund intrest calculator
+
+
+///Project Compund intrest calculator
 
         double p;
         double r;
@@ -236,7 +234,6 @@ public class javaCouching {
 
         System.out.printf("Ammount is %f ",A);
 
-         */
 
         /*
         System.out.println("are you a student?");
@@ -280,9 +277,9 @@ public class javaCouching {
         /// .lastIndexOf();
         /// .replace();
 
+/*
 
-
-//Simple Email Authenticator
+///Simple Email Authenticator
         String email;
         String username;
         String domain;
@@ -311,7 +308,7 @@ public class javaCouching {
 
 
 
- //CALCULATOR APP
+ ///CALCULATOR APP
 
         //Define the needed variables
         double num1;
@@ -356,6 +353,63 @@ public class javaCouching {
         if (validOperator){
             System.out.println(result);
         }
+
+ */
+
+
+/// Logical Operators
+        // && = AND (Both condition needs to be truE)
+        // ! = NOT ( make it false)
+        // || = OR ( if only one condition is true we excutue the code)
+/*
+        int temp;
+        boolean noWind=true;
+        boolean noSnow=true;
+        boolean noRain=true;
+        String forcast=null;
+
+        //User input
+        System.out.println("Enter a the current Temperature: ");
+        temp= sc.nextInt();
+
+
+        switch (forcast){
+            case "a" -> {
+                if (temp<40 && noRain && noSnow && noWind ){
+                    System.out.println("ITs a good werather");
+                }
+            }
+            case "b" ->{
+                if (temp<40 && !noRain && !noSnow && !noWind){
+                    System.out.println("Its is not nice ");
+                }
+            }
+
+        }
+        System.out.println(forcast);
+
+ */
+
+        String username;
+        //user input
+        System.out.print("Enter you username: ");
+        username=sc.nextLine();
+        //conditions for username
+        if (username.length()<4 || username.length()>15){
+            System.out.println("Username must be in between 4-15 charataches");
+        } else if (username.contains(" ") || username.contains("_") ) {
+            System.out.println("Can not contain any space or underscore");
+        } else {
+            System.out.println(username);
+        }
+
+
+
+
+
+
+
+
 
 
 
